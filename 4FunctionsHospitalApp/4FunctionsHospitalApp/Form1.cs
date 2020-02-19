@@ -44,13 +44,10 @@ namespace _4FunctionsHospitalApp
                 {
                     Console.WriteLine(field);
                 }
-                //if (string[4] == )
-                //{
-                    lblName.Text = Name.ToString();
-                //}
-                //lblName.Text = Name.ToString();
+                
             }
-            lblName.Text = Name.ToString();
+            //lblName.Text = Name;
+
             //if (txtCombo1.SelectedIndex == 0)
             //    county.Text = Laois.ToString();
             //while (readerFile != null)
@@ -102,13 +99,15 @@ namespace _4FunctionsHospitalApp
             label2.Visible = true;
             label3.Visible = true;
             label4.Visible = true;
-            label5.Visible = true;
-            label6.Visible = true;
+            //label5.Visible = true;
+            //label6.Visible = true;
             county.Visible = true;
             lblCounty.Visible = true;
             txtCombo2.Visible = true;
             lblID.Visible = true;
             lblName.Visible = true;
+            lblAddress.Visible = true;
+            lblEir.Visible = true;
             //}
 
             switch (txtCombo1.SelectedIndex)
@@ -118,36 +117,67 @@ namespace _4FunctionsHospitalApp
 
                     county.Text = "Carlow";
                     //lblName.Text = .Rows[0].Cells[0].Value.ToString();
-                    
+                    lblID.Text = "1";
+                    lblName.Text = "St Luke's General Hospital Kilkenny";
+                    lblAddress.Text = "Freshford Road, Kilkenny";
+                    lblEir.Text = "R95FY71";
                     //txtCombo2.Visible = true;
                     break;
                 case 1:
                     county.Text = "Cavan";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "2";
+                    lblName.Text = "Cavan General Hospital";
+                    lblAddress.Text = "Lisdarn, Cavan";
+                    lblEir.Text = "H12A5D7";
                     break;
                 case 2:
                     county.Text = "Clare";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "3";
+                    lblName.Text = "Ennis Hospital";
+                    lblAddress.Text = "Gort Road, Ennis, Co. Clare, ";
+                    lblEir.Text = "V95HN29";
                     break;
                 case 3:
                     county.Text = "Cork";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "4";
+                    lblName.Text = "Mercy University Hospital";
+                    lblAddress.Text = "Grenville Place, Cork";
+                    lblEir.Text = "T12WE28";
                     break;
                 case 4:
                     county.Text = "Donegal";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "5";
+                    lblName.Text = "Letterkenny University Hospital";
+                    lblAddress.Text = "Kilmacrennan Road, Letterkenny, Co. Donegal";
+                    lblEir.Text = "F92AE81";
                     break;
                 case 5:
                     county.Text = "Dublin";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "6";
+                    lblName.Text = "St Columcille's Hospital";
+                    lblAddress.Text = "Bray Road, Loughlinstown, Co. Dublin";
+                    lblEir.Text = "D18V9K1";
                     break;
                 case 6:
                     county.Text = "Galway";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "7";
+                    lblName.Text = "University Hospital Galway";
+                    lblAddress.Text = "Newcastle Road, Galway";
+                    lblEir.Text = "H91YR71";
                     break;
                 case 7:
                     county.Text = "Kerry";
                     //txtCombo2.Visible = true;
+                    lblID.Text = "8";
+                    lblName.Text = "University Hospital Kerry";
+                    lblAddress.Text = "Tralee, Co. Kerry";
+                    lblEir.Text = "V92NX94";
                     break;
                 case 8:
                     county.Text = "Kildare";
