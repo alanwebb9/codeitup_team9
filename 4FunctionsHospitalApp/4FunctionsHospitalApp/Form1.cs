@@ -8,12 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.FileIO;
 
 namespace _4FunctionsHospitalApp
 {
     public partial class HospitalLocator : Form
     {
+        List<Hospital> Hlist = new List<Hospital>();
+        string readerFile = "hospitals.csv";
         
+
+
         public HospitalLocator()
         {
             InitializeComponent();
@@ -26,9 +31,33 @@ namespace _4FunctionsHospitalApp
 
         private void txtCombo1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            TextFieldParser parser = new TextFieldParser(@"hospitals.csv");
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(",");
+            while (!parser.EndOfData)
+            {
+                //Processing row
+                string[] fields = parser.ReadFields();
+                foreach (string field in fields)
+                {
+                    //TODO: Process field
+                    Console.WriteLine(field);
+                }
+            }
+
             //if (txtCombo1.SelectedIndex == 0)
             //    county.Text = Laois.ToString();
+            while (readerFile != null)
+            {
+                foreach (Hospital hospitalList in Hlist)
+                {
+                    
 
+                }
+
+
+            }
 
 
 
@@ -44,16 +73,23 @@ namespace _4FunctionsHospitalApp
             //string[] Test = new string[] { txtCombo1.Text };
             //Test = streamReader.ReadLine().Split(',');
 
-            using (StreamReader sr = new StreamReader("hospitals.csv"))
-            {
-                string county;
-                while ((county = sr.ReadLine()) != null)
-                {
-                    //lblName.Text = 
-                    //Come back to later
-                    //Console.WriteLine(county);
-                }
-            }
+          //  using (StreamReader sr = new StreamReader("hospitals.csv"))
+            //{
+            //    //string[] array = new sr.ReadToEnd();
+            //    int i = 0;
+
+            //    while ((county = sr.ReadLine()) != null)
+            //    {
+            //        i++;
+            //        //lblAddress = sr.ReadLine();
+            //        //lblName.Text = 
+            //        //Come back to later
+            //        //Console.WriteLine(county);
+            //    }
+            //    string[] array = new string[i];
+            //    lblID.Text = array[0];
+            //    lblID.Visible = true;
+            //}
             //if (txtCombo1.SelectedIndex != null)
             //{
             //txtCombo2.Visible = true;
@@ -64,7 +100,9 @@ namespace _4FunctionsHospitalApp
             label5.Visible = true;
             label6.Visible = true;
             county.Visible = true;
+            lblCounty.Visible = true;
             txtCombo2.Visible = true;
+            lblID.Visible = true;
             //}
 
             switch (txtCombo1.SelectedIndex)
@@ -73,6 +111,8 @@ namespace _4FunctionsHospitalApp
                 case 0:
 
                     county.Text = "Carlow";
+                    //lblName.Text = .Rows[0].Cells[0].Value.ToString();
+                    
                     //txtCombo2.Visible = true;
                     break;
                 case 1:

@@ -44,10 +44,13 @@
             this.lblEir = new System.Windows.Forms.Label();
             this.lblX = new System.Windows.Forms.Label();
             this.lblY = new System.Windows.Forms.Label();
+            this.lblCounty = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCombo1
             // 
+            this.txtCombo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtCombo1.FormattingEnabled = true;
             this.txtCombo1.IntegralHeight = false;
             this.txtCombo1.Items.AddRange(new object[] {
@@ -87,7 +90,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(202, 234);
+            this.label1.Location = new System.Drawing.Point(199, 269);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 20);
             this.label1.TabIndex = 1;
@@ -98,7 +101,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(202, 269);
+            this.label2.Location = new System.Drawing.Point(199, 304);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 2;
@@ -109,7 +112,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(202, 304);
+            this.label3.Location = new System.Drawing.Point(199, 339);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 20);
             this.label3.TabIndex = 3;
@@ -120,7 +123,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(202, 339);
+            this.label4.Location = new System.Drawing.Point(199, 374);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 20);
             this.label4.TabIndex = 4;
@@ -131,7 +134,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(202, 373);
+            this.label5.Location = new System.Drawing.Point(199, 408);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 20);
             this.label5.TabIndex = 5;
@@ -142,7 +145,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(202, 405);
+            this.label6.Location = new System.Drawing.Point(199, 440);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 20);
             this.label6.TabIndex = 6;
@@ -171,6 +174,7 @@
             // 
             // txtCombo2
             // 
+            this.txtCombo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtCombo2.FormattingEnabled = true;
             this.txtCombo2.Items.AddRange(new object[] {
             "testHospital1"});
@@ -193,60 +197,83 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(338, 269);
+            this.lblName.Location = new System.Drawing.Point(338, 304);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(63, 17);
             this.lblName.TabIndex = 17;
-            this.lblName.Text = "Output 1";
+            this.lblName.Text = "Output 2";
             this.lblName.Visible = false;
             this.lblName.Click += new System.EventHandler(this.label10_Click);
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(338, 304);
+            this.lblAddress.Location = new System.Drawing.Point(338, 339);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(63, 17);
             this.lblAddress.TabIndex = 18;
-            this.lblAddress.Text = "Output 2";
+            this.lblAddress.Text = "Output 3";
             this.lblAddress.Visible = false;
             // 
             // lblEir
             // 
             this.lblEir.AutoSize = true;
-            this.lblEir.Location = new System.Drawing.Point(338, 339);
+            this.lblEir.Location = new System.Drawing.Point(338, 374);
             this.lblEir.Name = "lblEir";
             this.lblEir.Size = new System.Drawing.Size(63, 17);
             this.lblEir.TabIndex = 19;
-            this.lblEir.Text = "Output 3";
+            this.lblEir.Text = "Output 4";
             this.lblEir.Visible = false;
             // 
             // lblX
             // 
             this.lblX.AutoSize = true;
-            this.lblX.Location = new System.Drawing.Point(338, 373);
+            this.lblX.Location = new System.Drawing.Point(338, 408);
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(63, 17);
             this.lblX.TabIndex = 20;
-            this.lblX.Text = "Output 4";
+            this.lblX.Text = "Output 5";
             this.lblX.Visible = false;
             // 
             // lblY
             // 
             this.lblY.AutoSize = true;
-            this.lblY.Location = new System.Drawing.Point(338, 405);
+            this.lblY.Location = new System.Drawing.Point(338, 440);
             this.lblY.Name = "lblY";
             this.lblY.Size = new System.Drawing.Size(63, 17);
             this.lblY.TabIndex = 21;
-            this.lblY.Text = "Output 5";
+            this.lblY.Text = "Output 6";
             this.lblY.Visible = false;
+            // 
+            // lblCounty
+            // 
+            this.lblCounty.AutoSize = true;
+            this.lblCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCounty.Location = new System.Drawing.Point(199, 233);
+            this.lblCounty.Name = "lblCounty";
+            this.lblCounty.Size = new System.Drawing.Size(73, 20);
+            this.lblCounty.TabIndex = 22;
+            this.lblCounty.Text = "County:";
+            this.lblCounty.Visible = false;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(338, 272);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(63, 17);
+            this.lblID.TabIndex = 23;
+            this.lblID.Text = "Output 1";
+            this.lblID.Visible = false;
             // 
             // HospitalLocator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(991, 450);
+            this.ClientSize = new System.Drawing.Size(991, 476);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.lblCounty);
             this.Controls.Add(this.lblY);
             this.Controls.Add(this.lblX);
             this.Controls.Add(this.lblEir);
@@ -289,6 +316,8 @@
         private System.Windows.Forms.Label lblEir;
         private System.Windows.Forms.Label lblX;
         private System.Windows.Forms.Label lblY;
+        private System.Windows.Forms.Label lblCounty;
+        private System.Windows.Forms.Label lblID;
     }
 }
 
