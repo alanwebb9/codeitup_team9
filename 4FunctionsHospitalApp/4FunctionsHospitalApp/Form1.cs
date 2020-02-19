@@ -15,7 +15,7 @@ namespace _4FunctionsHospitalApp
     public partial class HospitalLocator : Form
     {
         List<Hospital> Hlist = new List<Hospital>();
-        string readerFile = "hospitals.csv";
+        //string readerFile = "hospitals.csv";
         
 
 
@@ -31,33 +31,38 @@ namespace _4FunctionsHospitalApp
 
         private void txtCombo1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             TextFieldParser parser = new TextFieldParser(@"hospitals.csv");
             parser.TextFieldType = FieldType.Delimited;
             parser.SetDelimiters(",");
             while (!parser.EndOfData)
             {
                 //Processing row
+                Hospital h1 = new Hospital("");
+                Hlist.Add(h1);
                 string[] fields = parser.ReadFields();
                 foreach (string field in fields)
                 {
-                    //TODO: Process field
                     Console.WriteLine(field);
                 }
+                //if (string[4] == )
+                //{
+                    lblName.Text = Name.ToString();
+                //}
+                //lblName.Text = Name.ToString();
             }
-
+            lblName.Text = Name.ToString();
             //if (txtCombo1.SelectedIndex == 0)
             //    county.Text = Laois.ToString();
-            while (readerFile != null)
-            {
-                foreach (Hospital hospitalList in Hlist)
-                {
+            //while (readerFile != null)
+            //{
+            //    foreach (Hospital hospitalList in Hlist)
+            //    {
                     
 
-                }
+            //    }
 
 
-            }
+            //}
 
 
 
@@ -103,6 +108,7 @@ namespace _4FunctionsHospitalApp
             lblCounty.Visible = true;
             txtCombo2.Visible = true;
             lblID.Visible = true;
+            lblName.Visible = true;
             //}
 
             switch (txtCombo1.SelectedIndex)

@@ -22,7 +22,19 @@ namespace _4FunctionsHospitalApp
             this.eircode = eircode;
             this.county = county;
         }
+        public Hospital(string name)
+        {
+            this.name = name;
+        }
+        public void Display(string name)
+        {
+            Console.WriteLine();
+        }
 
+        //public void Display(string name, string address, string eircode, string county)
+        //{
+        //    Console.WriteLine("(0)";
+        //}
 
 
 
